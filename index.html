@@ -6,38 +6,31 @@
 :root{--bg:#F3EFE7;--ink:#121418;--mute:#676B74;--or:#F26A1B;--card:#fff;--line:rgba(128,128,128,.2);--btn:#F3EFE7}
 @media (prefers-color-scheme:dark){:root{--bg:#16181C;--ink:#EDEFF2;--mute:#9AA0A8;--card:#24272C;--btn:#2F3339}}
 *{box-sizing:border-box}body{margin:0;min-height:100vh;background:var(--bg);color:var(--ink);font:16px/1.5 system-ui,-apple-system,'Segoe UI',Arial,sans-serif;display:grid;place-items:center;padding:24px 16px}
-main{width:100%;max-width:760px}
+main{width:100%;max-width:820px}
 h1{font-size:clamp(26px,5vw,38px);line-height:1.15;margin:0 0 8px}
 p.s{color:var(--mute);margin:0 0 28px}
 .c{display:flex;align-items:stretch;margin-bottom:14px;border-radius:18px;background:var(--card);border:1px solid var(--line);transition:transform .2s,border-color .2s;overflow:hidden}
 .c:hover{transform:translateY(-3px);border-color:var(--or)}
 .c a.open{flex:1;min-width:0;display:flex;gap:16px;align-items:center;padding:20px 22px;color:inherit;text-decoration:none}
+.c a.open>div{min-width:0;overflow-wrap:anywhere}
 .c b{display:block;font-size:19px;margin-bottom:4px}
 .c .sub{color:var(--mute);font-size:14px}
 .c .go{margin-left:auto;font-style:normal;font-size:24px;color:var(--or);padding-left:8px}
 .n{flex:none;width:48px;height:48px;border-radius:14px;background:var(--or);display:grid;place-items:center;font-weight:800;font-size:20px;color:#fff}
-a.dl{flex:none;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;width:118px;padding:12px 8px;border-left:1px solid var(--line);background:var(--btn);color:inherit;text-decoration:none;font-size:13px;font-weight:600;text-align:center;transition:background .2s,color .2s}
+.acts{flex:none;display:flex;flex-direction:column;border-left:1px solid var(--line)}
+a.dl{flex:1;display:flex;align-items:center;gap:8px;width:108px;padding:8px 14px;background:var(--btn);color:inherit;text-decoration:none;font-size:14px;font-weight:700;transition:background .2s,color .2s}
+a.dl+a.dl{border-top:1px solid var(--line)}
 a.dl:hover{background:var(--or);color:#fff}
-a.dl svg{width:22px;height:22px;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
-a.dl small{font-weight:500;opacity:.75;font-size:11px}
-.c a.open>div{min-width:0;overflow-wrap:anywhere}
-footer{margin-top:22px;color:var(--mute);font-size:13px}
-@media (max-width:560px){.c{flex-direction:column}a.dl{width:auto;flex-direction:row;gap:10px;border-left:0;border-top:1px solid var(--line)}.c .go{display:none}}
+a.dl svg{width:20px;height:20px;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;flex:none}
+footer{margin-top:22px;color:var(--mute);font-size:13px;line-height:1.6}
+@media (max-width:560px){.c{flex-direction:column}.acts{flex-direction:row;border-left:0;border-top:1px solid var(--line)}a.dl{width:auto;justify-content:center}a.dl+a.dl{border-top:0;border-left:1px solid var(--line)}.c .go{display:none}}
 </style></head><body><main>
 <h1>Презентации QAJ Service</h1>
-<p class="s">🔒 Презентации открываются по паролю — его выдаёт автор. Пароль вводится один раз на устройстве. Скачанный HTML-файл тоже защищён паролем и открывается без интернета. На телефоне лучше держать экран горизонтально.</p>
-
-<div class="c"><a class="open" href="tap2work.html"><span class="n">1</span><div><b>Цифровое патрулирование</b><span class="sub">QAJ Service на платформе tap2work · 11 слайдов</span></div><i class="go">→</i></a>
-<a class="dl" href="tap2work.html" download="Цифровое патрулирование.html" title="Скачать HTML"><svg viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>Скачать HTML<small>2 МБ</small></a></div>
-
-<div class="c"><a class="open" href="qaj-service.html"><span class="n">2</span><div><b>Цифровой контур дорожной эксплуатации</b><span class="sub">ҚАЖ Сервис · 21 слайд</span></div><i class="go">→</i></a>
-<a class="dl" href="qaj-service-offline.html" download="ҚАЖ Сервис — цифровой контур.html" title="Скачать HTML"><svg viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>Скачать HTML<small>14 МБ</small></a></div>
-
-<div class="c"><a class="open" href="budget-2027.html"><span class="n">3</span><div><b>Бюджеты и потребность в ТРУ на 2027 год</b><span class="sub">Аппаратное совещание · 7 слайдов</span></div><i class="go">→</i></a>
-<a class="dl" href="budget-2027.html" download="Бюджет 2027 аппаратное совещание.html" title="Скачать HTML"><svg viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>Скачать HTML<small>0,7 МБ</small></a></div>
-
-<div class="c"><a class="open" href="dohody-gsm.html"><span class="n">4</span><div><b>Доходы и ГСМ за сопоставимые периоды</b><span class="sub">1-е полугодие 2025 и 2026 · 6 слайдов</span></div><i class="go">→</i></a>
-<a class="dl" href="dohody-gsm.html" download="Доходы ГСМ 2025-2026 1е полугодие.html" title="Скачать HTML"><svg viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>Скачать HTML<small>1 МБ</small></a></div>
-
-<footer>Управление: ← → листать · N — заметки докладчика · M — все слайды · F — полный экран. На телефоне — свайп.</footer>
+<p class="s">🔒 Каждая презентация открывается по паролю — его выдаёт автор. Скачанные HTML и PDF тоже защищены паролем; HTML открывается без интернета. На телефоне лучше держать экран горизонтально.</p>
+<div class="c"><a class="open" href="tap2work.html"><span class="n">1</span><div><b>Цифровое патрулирование</b><span class="sub">QAJ Service на платформе tap2work · 11 слайдов</span></div><i class="go">→</i></a><div class="acts"><a class="dl" href="tap2work.html" download="Цифровое патрулирование.html" title="Скачать HTML — открывается без интернета, по паролю"><svg viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>HTML</a><a class="dl" href="pdf/tap2work.pdf" download="Цифровое патрулирование.pdf" title="Скачать PDF — все слайды, по паролю"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="9" y1="13" x2="15" y2="13"/><line x1="9" y1="17" x2="15" y2="17"/></svg>PDF</a></div></div>
+<div class="c"><a class="open" href="qaj-service.html"><span class="n">2</span><div><b>Цифровой контур дорожной эксплуатации</b><span class="sub">ҚАЖ Сервис · 21 слайд</span></div><i class="go">→</i></a><div class="acts"><a class="dl" href="qaj-service-offline.html" download="ҚАЖ Сервис — цифровой контур.html" title="Скачать HTML — открывается без интернета, по паролю"><svg viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>HTML</a><a class="dl" href="pdf/qaj-service.pdf" download="ҚАЖ Сервис — цифровой контур.pdf" title="Скачать PDF — все слайды, по паролю"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="9" y1="13" x2="15" y2="13"/><line x1="9" y1="17" x2="15" y2="17"/></svg>PDF</a></div></div>
+<div class="c"><a class="open" href="budget-2027.html"><span class="n">3</span><div><b>Бюджеты и потребность в ТРУ на 2027 год</b><span class="sub">Аппаратное совещание · 7 слайдов</span></div><i class="go">→</i></a><div class="acts"><a class="dl" href="budget-2027.html" download="Бюджет 2027 аппаратное совещание.html" title="Скачать HTML — открывается без интернета, по паролю"><svg viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>HTML</a><a class="dl" href="pdf/budget-2027.pdf" download="Бюджет 2027 аппаратное совещание.pdf" title="Скачать PDF — все слайды, по паролю"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="9" y1="13" x2="15" y2="13"/><line x1="9" y1="17" x2="15" y2="17"/></svg>PDF</a></div></div>
+<div class="c"><a class="open" href="dohody-gsm.html"><span class="n">4</span><div><b>Доходы и ГСМ за сопоставимые периоды</b><span class="sub">1-е полугодие 2025 и 2026 · 6 слайдов</span></div><i class="go">→</i></a><div class="acts"><a class="dl" href="dohody-gsm.html" download="Доходы ГСМ 2025-2026 1е полугодие.html" title="Скачать HTML — открывается без интернета, по паролю"><svg viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>HTML</a><a class="dl" href="pdf/dohody-gsm.pdf" download="Доходы ГСМ 2025-2026 1е полугодие.pdf" title="Скачать PDF — все слайды, по паролю"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="9" y1="13" x2="15" y2="13"/><line x1="9" y1="17" x2="15" y2="17"/></svg>PDF</a></div></div>
+<div class="c"><a class="open" href="doklad-0510.html"><span class="n">5</span><div><b>Закупки 2026: бюджет и отказы</b><span class="sub">Доклад 05.10.2026 · 5 слайдов</span></div><i class="go">→</i></a><div class="acts"><a class="dl" href="doklad-0510.html" download="Доклад 05.10.2026 — закупки 2026.html" title="Скачать HTML — открывается без интернета, по паролю"><svg viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>HTML</a><a class="dl" href="pdf/doklad-0510.pdf" download="Доклад 05.10.2026 — закупки 2026.pdf" title="Скачать PDF — все слайды, по паролю"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="9" y1="13" x2="15" y2="13"/><line x1="9" y1="17" x2="15" y2="17"/></svg>PDF</a></div></div>
+<footer>Управление: ← → листать · N — заметки · P — окно докладчика на второй экран · Q — QR-код для телефонов · L — трансляция слайдов на телефоны · M — содержание · F — полный экран. На телефоне — свайп.</footer>
 </main></body></html>
