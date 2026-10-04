@@ -2,25 +2,40 @@
 <html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Презентации QAJ Service</title>
 <style>
-:root{--bg:#F3EFE7;--ink:#121418;--mute:#676B74;--or:#F26A1B;--card:#fff}
-@media (prefers-color-scheme:dark){:root{--bg:#16181C;--ink:#EDEFF2;--mute:#9AA0A8;--card:#24272C}}
+:root{--bg:#F3EFE7;--ink:#121418;--mute:#676B74;--or:#F26A1B;--card:#fff;--line:rgba(128,128,128,.2);--btn:#F3EFE7}
+@media (prefers-color-scheme:dark){:root{--bg:#16181C;--ink:#EDEFF2;--mute:#9AA0A8;--card:#24272C;--btn:#2F3339}}
 *{box-sizing:border-box}body{margin:0;min-height:100vh;background:var(--bg);color:var(--ink);font:16px/1.5 system-ui,-apple-system,'Segoe UI',Arial,sans-serif;display:grid;place-items:center;padding:24px 16px}
-main{width:100%;max-width:720px}
+main{width:100%;max-width:760px}
 h1{font-size:clamp(26px,5vw,38px);line-height:1.15;margin:0 0 8px}
 p.s{color:var(--mute);margin:0 0 28px}
-a.c{display:flex;gap:16px;align-items:center;padding:20px 22px;margin-bottom:14px;border-radius:18px;background:var(--card);color:inherit;text-decoration:none;border:1px solid rgba(128,128,128,.2);transition:transform .2s,border-color .2s}
-a.c:hover{transform:translateY(-3px);border-color:var(--or)}
-a.c b{display:block;font-size:19px;margin-bottom:4px}
-a.c span{color:var(--mute);font-size:14px}
-a.c i{margin-left:auto;font-style:normal;font-size:24px;color:var(--or)}
-.n{flex:none;width:48px;height:48px;border-radius:14px;background:var(--or);color:#fff;display:grid;place-items:center;font-weight:800;font-size:20px;color:#fff!important}
+.c{display:flex;align-items:stretch;margin-bottom:14px;border-radius:18px;background:var(--card);border:1px solid var(--line);transition:transform .2s,border-color .2s;overflow:hidden}
+.c:hover{transform:translateY(-3px);border-color:var(--or)}
+.c a.open{flex:1;min-width:0;display:flex;gap:16px;align-items:center;padding:20px 22px;color:inherit;text-decoration:none}
+.c b{display:block;font-size:19px;margin-bottom:4px}
+.c .sub{color:var(--mute);font-size:14px}
+.c .go{margin-left:auto;font-style:normal;font-size:24px;color:var(--or);padding-left:8px}
+.n{flex:none;width:48px;height:48px;border-radius:14px;background:var(--or);display:grid;place-items:center;font-weight:800;font-size:20px;color:#fff}
+a.dl{flex:none;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;width:118px;padding:12px 8px;border-left:1px solid var(--line);background:var(--btn);color:inherit;text-decoration:none;font-size:13px;font-weight:600;text-align:center;transition:background .2s,color .2s}
+a.dl:hover{background:var(--or);color:#fff}
+a.dl svg{width:22px;height:22px;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+a.dl small{font-weight:500;opacity:.75;font-size:11px}
 footer{margin-top:22px;color:var(--mute);font-size:13px}
+@media (max-width:560px){.c{flex-direction:column}a.dl{width:auto;flex-direction:row;gap:10px;border-left:0;border-top:1px solid var(--line)}.c .go{display:none}}
 </style></head><body><main>
 <h1>Презентации QAJ Service</h1>
-<p class="s">Откройте нужную презентацию. На телефоне лучше держать экран горизонтально.</p>
-<a class="c" href="tap2work.html"><span class="n">1</span><div><b>Цифровое патрулирование</b><span>QAJ Service на платформе tap2work · 11 слайдов</span></div><i>→</i></a>
-<a class="c" href="qaj-service.html"><span class="n">2</span><div><b>Цифровой контур дорожной эксплуатации</b><span>ҚАЖ Сервис · 21 слайд</span></div><i>→</i></a>
-<a class="c" href="budget-2027.html"><span class="n">3</span><div><b>Бюджеты и потребность в ТРУ на 2027 год</b><span>Аппаратное совещание · 7 слайдов</span></div><i>→</i></a>
-<a class="c" href="dohody-gsm.html"><span class="n">4</span><div><b>Доходы и ГСМ за сопоставимые периоды</b><span>1-е полугодие 2025 и 2026 · 6 слайдов</span></div><i>→</i></a>
+<p class="s">Откройте презентацию в браузере или скачайте её одним HTML-файлом — он открывается без интернета. На телефоне лучше держать экран горизонтально.</p>
+
+<div class="c"><a class="open" href="tap2work.html"><span class="n">1</span><div><b>Цифровое патрулирование</b><span class="sub">QAJ Service на платформе tap2work · 11 слайдов</span></div><i class="go">→</i></a>
+<a class="dl" href="tap2work.html" download="Цифровое патрулирование.html" title="Скачать HTML"><svg viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>Скачать HTML<small>2 МБ</small></a></div>
+
+<div class="c"><a class="open" href="qaj-service.html"><span class="n">2</span><div><b>Цифровой контур дорожной эксплуатации</b><span class="sub">ҚАЖ Сервис · 21 слайд</span></div><i class="go">→</i></a>
+<a class="dl" href="qaj-service-offline.html" download="ҚАЖ Сервис — цифровой контур.html" title="Скачать HTML"><svg viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>Скачать HTML<small>14 МБ</small></a></div>
+
+<div class="c"><a class="open" href="budget-2027.html"><span class="n">3</span><div><b>Бюджеты и потребность в ТРУ на 2027 год</b><span class="sub">Аппаратное совещание · 7 слайдов</span></div><i class="go">→</i></a>
+<a class="dl" href="budget-2027.html" download="Бюджет 2027 аппаратное совещание.html" title="Скачать HTML"><svg viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>Скачать HTML<small>0,7 МБ</small></a></div>
+
+<div class="c"><a class="open" href="dohody-gsm.html"><span class="n">4</span><div><b>Доходы и ГСМ за сопоставимые периоды</b><span class="sub">1-е полугодие 2025 и 2026 · 6 слайдов</span></div><i class="go">→</i></a>
+<a class="dl" href="dohody-gsm.html" download="Доходы ГСМ 2025-2026 1е полугодие.html" title="Скачать HTML"><svg viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>Скачать HTML<small>1 МБ</small></a></div>
+
 <footer>Управление: ← → листать · N — заметки докладчика · M — все слайды · F — полный экран. На телефоне — свайп.</footer>
 </main></body></html>
